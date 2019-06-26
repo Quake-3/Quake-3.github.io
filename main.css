@@ -1,6 +1,4 @@
 body {
-	margin: 0;
-	padding: 0;
 	font-family: Arial;
 	font-size: 1.2em;
 	height: 1800px;
@@ -18,8 +16,6 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	margin-top: 10px;
-	margin-left: 770px;
 }
 
 .container input {
@@ -70,15 +66,34 @@ body {
 	transform: rotate(45deg);
 }
 
+.check-box {
+	margin-top: 25px;
+	margin-left: 25px;
+	height: 25px;
+}
+
+.radio-cont {
+	margin-top: 35px;
+}
+
 .radio {
 	margin-right: 15px;
 	margin-left: 25px;
 }
 
+#checker {
+	margin-left: 15px;
+}
+
+#mySelect {
+	display: block;
+	margin: 20px;
+}
+
 input[type=range] {
   height: 20px;
   -webkit-appearance: none;
-  margin: 10px 0;
+  margin: 10px;
   width: 200px;
 }
 input[type=range]:focus {
@@ -166,6 +181,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 #out {
 	display: block;
+	margin: 15px;
 }
 #nav {
 	width: 160px;
@@ -220,5 +236,6 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .calc {
-	margin-left: 230px;
+	margin-top: 250px;
+	margin-left: 25px;
 }

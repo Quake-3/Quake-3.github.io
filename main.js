@@ -1,41 +1,41 @@
 
-//CHECKBOX
+	//CHECKBOX
 
-document.getElementById('check1').onchange = function func(){
-var checkb = document.getElementById('check1');
-if(checkb.checked){
+document.getElementById('check1').onchange = function changer(){
+var checkBox = document.getElementById('check1');
+if(checkBox.checked){
 	console.log("The button was checked!");
 }else{console.log("The button was not checked");};
 };
-	
-//RADIO-BUTTONS
 
-document.getElementById('checker').onclick = function func0(){
-	var radio = document.getElementsByName('rad');
-	for (var i = 0; i < radio.length; i++) {
-		if(radio[i].checked){
+	//RADIO-BUTTONS
+
+document.getElementById('checker').onclick = function changerRadio(){
+	var radioBut = document.getElementsByClassName('radio');
+	for (var i = 0; i < radioBut.length; i++) {
+		if(radioBut[i].checked){
 			console.log('The ' + (i+1) + ' radio was checked!');
 		}
 	}
 }
 
-//SELECT
+	//SELECT
 
-document.getElementById('mySelect').onchange = function func1(){
-var sel = document.getElementById('mySelect').selectedIndex;
+document.getElementById('mySelect').onchange = function List(){
+var select = document.getElementById('mySelect').selectedIndex;
 var options = document.getElementById('mySelect').options;
-console.log('Выбран элемент: ' + options[sel].text);
+console.log('Выбран элемент: ' + options[select].text);
 }
 
-//RANGE
+	//RANGE
 
-document.getElementById('ran').oninput = function func2(){
+document.getElementById('ran').oninput = function rangeChanger(){
 	var rng = document.getElementById('ran');
 	var p = document.getElementById('out');
 	p.innerHTML=rng.value;
 }
 
-//DROP-DOWN-MENU
+	//DROP-DOWN-MENU
 
 document.getElementById('nav').onclick = function openMenu(event) {
 	var target = event.target;
@@ -59,20 +59,20 @@ function closeMenu() {
 	}
 }
 
-var avatar = document.getElementById('nav');
-var box = avatar.getBoundingClientRect();
+var list = document.getElementById('nav');
+var box = list.getBoundingClientRect();
 
-var avatarTop = avatar.offsetHeight + box.top;
+var avatarTop = list.offsetHeight + box.top;
 
 document.onscroll = function() {
-  var scrolled = window.pageYOffset;
+	var scrolled = window.pageYOffset;
 
-  if (scrolled > avatarTop) {
-	avatar.style.position = 'fixed';
-	avatar.style.top = '15px';;
-  } else {
-	avatar.style.position = 'static';
-  }
+	if (scrolled > avatarTop) {
+	list.style.position = 'fixed';
+	list.style.top = '15px';;
+	} else {
+	list.style.position = 'static';
+	}
 }
 
 	//СЧЕТЧИК ИЗ 2 ЧИСЕЛ, КОТОРЫЙ ВЫВОДИТ ИХ СУММУ И ПРОИЗВЕДЕНИЕ
@@ -109,11 +109,12 @@ document.onscroll = function() {
 
 	//СЧЕТЧИК ПО НАЖАТИЮ НА КНОПКИ
 
-var res = document.getElementById('num');
-var e = function (event){
-	return res.value++;
+var outNum = document.getElementById('num');
+
+var add = function (event){
+	return outNum.value++;
 };
 
-var d = function (event){
-	 if(res.value>0){return res.value--};
+var del = function (event){
+	 if(outNum.value>0){return outNum.value--};
 };
