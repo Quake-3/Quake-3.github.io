@@ -59,21 +59,21 @@ function closeMenu() {
 	}
 }
 
-var list = document.getElementById('nav');
-var box = list.getBoundingClientRect();
+// var list = document.getElementById('nav');
+// var box = list.getBoundingClientRect();
 
-var avatarTop = list.offsetHeight + box.top;
+// var avatarTop = list.offsetHeight + box.top;
 
-document.onscroll = function() {
-	var scrolled = window.pageYOffset;
+// document.onscroll = function() {
+// 	var scrolled = window.pageYOffset;
 
-	if (scrolled > avatarTop) {
-	list.style.position = 'fixed';
-	list.style.top = '15px';;
-	} else {
-	list.style.position = 'static';
-	}
-}
+// 	if (scrolled > avatarTop) {
+// 	list.style.position = 'fixed';
+// 	list.style.top = '15px';;
+// 	} else {
+// 	list.style.position = 'static';
+// 	}
+// }
 
 	//СЧЕТЧИК ИЗ 2 ЧИСЕЛ, КОТОРЫЙ ВЫВОДИТ ИХ СУММУ И ПРОИЗВЕДЕНИЕ
 

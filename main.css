@@ -67,13 +67,14 @@ body {
 }
 
 .check-box {
-	margin-top: 25px;
+	margin-bottom: 25px;
 	margin-left: 25px;
 	height: 25px;
 }
 
 .radio-cont {
-	margin-top: 35px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 .radio {
@@ -83,6 +84,20 @@ body {
 
 #checker {
 	margin-left: 15px;
+	width: 180px;
+	height: 40px;
+	background: #1EFF87;
+	border-radius: 15px;
+	border: none;
+	box-shadow: 0 5px 10px rgba(25,213,113,.9);
+	outline: none;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+#checker:hover {
+	box-shadow: 0 0px 10px rgba(0,246,213,.9);
+	background: #00F6D5;
 }
 
 #mySelect {
@@ -188,6 +203,8 @@ input[type=range]:focus::-ms-fill-upper {
 	margin:0;
 	margin-left: 50px;
 	height: 65px;
+	margin-bottom: 250px;
+	margin-top: 25px;
 }
 .menu-item {
 	width: 160px;
@@ -236,6 +253,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .calc {
-	margin-top: 250px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 	margin-left: 25px;
 }
